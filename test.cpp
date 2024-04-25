@@ -90,6 +90,14 @@ void traverse (){
         system("cls");
         return;
     }
+    else {
+        node* correntNode = start;
+        while (correntNode != NULL){
+            cout << "NIM : " << correntNode -> noMhs <<",nama" << currentNode ->name << endl;
+            currentNode + currentNode -> nect;
+
+        }
+    }
 }
 
 int main(){
