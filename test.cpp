@@ -107,6 +107,20 @@ void searchData(){
         system ("cls");
         return ;
     }
+    else {
+        int nim;
+        cout << "masukkan NIM:";
+        cin >> nim;
+        node* currentNode = start;
+        while (currentNode ! = NULL){
+            if (currentNode->noMhs == nim){
+                cout << "NIM:" << currentNode - > noMhs << ", nama: " << currentNode -> name << endl;
+                return;
+            }
+            currentNode= currentNode -> next;
+        }
+        cout << "data tidak ditemumkan" << endl;
+    }
 }
 int main(){
 
