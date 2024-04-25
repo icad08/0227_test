@@ -140,6 +140,13 @@ int main(){
                 system ("pause");
                 system  ("cls");
                 break;
+                case  2:
+                if (listEmpty()){
+                    cout << "list kosong" << endl;
+                    system ("pause");
+                    system( "cls");
+                    break;
+                }
             }
         }
     }
