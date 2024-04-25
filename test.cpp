@@ -34,7 +34,18 @@ void addNode (){
 
     node* previous = START;
     node* current = START;
-    while ((current != NULL) && (current -> noMhs ))
+    while ((current != NULL) && (current -> noMhs )){
+        if (nim < current->noMhs ) {
+            cout << "nim sudah ada" << endl;
+            return;
+        
+        }
+        previous = current;
+        current = current->next;
+    }
+    nodeBaru->next  = current;
+    previous->next = nodeBaru;
+
 }
 
 int main(){
