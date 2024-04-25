@@ -82,6 +82,16 @@ bool lisstEmpty(){
     else  
      return false;
 }
+
+void traverse (){
+    if (listEmpty()){
+        cout<< "list kosong" <<endl;
+        system ("pause");
+        system("cls");
+        return;
+    }
+}
+
 int main(){
 
 }
