@@ -160,10 +160,20 @@ int main(){
                 break;
                 case 3:
                 traverse();
-                
-
+                case 4:
+                searchData();
+                break;
+                case 5:
+                break;
+                default:
+                cout << "pilihan tidak ada" << endl;
+                break;
             }
         }
+        catch (exception e){
+            cout << "terjadi kesalahan" << endl;
+        }
+        while (pilihan ! = 5);
     }
 
 
