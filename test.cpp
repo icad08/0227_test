@@ -25,7 +25,16 @@ void addNode (){
             cout  << "nim sudah ada \n";
             return;
         }
+
+        nodeBaru->next= START ;
+        START = nodeBaru;
+        return;
+
     }
+
+    node* previous = START;
+    node* current = START;
+    while ((current != NULL) && (current -> noMhs ))
 }
 
 int main(){
